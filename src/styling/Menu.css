@@ -1,0 +1,16 @@
+.menu-item, .cart-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .menu-item:last-child, .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .box {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+ 
+  

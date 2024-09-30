@@ -1,0 +1,90 @@
+/* Footer Styles */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+}
+
+/* Container inside footer */
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer text */
+.footer .text {
+  margin: 0;
+}
+
+/* Footer links */
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-left: 20px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure the body takes the full height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content will take the available space and push the footer down */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links li {
+    margin: 10px 0;
+  }
+}
